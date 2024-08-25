@@ -1,0 +1,109 @@
+WSL: Windows Subsystem for Linux.
+Basic Software Stack Order
+   Hardware
+   Firmware
+   Virtual Machine Management
+   Kernel
+   OS
+   Applications
+
+
+Points:
+   Docker Hub Registry > Docker container are registered at.
+   Image are blueprint of container.
+   container is running instance of image.
+   container versions are updates of Applications.
+   Cloud native apps are scalable
+
+
+
+
+
+
+Six strategies for getting better results
+   Prompt Engineering
+
+   1. Write clear instructions
+   2. Provide reference text
+   3. Split complex tasks into simpler subtasks
+   4. Give the model time to "think"
+   5. Use external tools
+   6. Test changes systematically
+
+   https://platform.openai.com/docs/guides/prompt-engineering/strategy-write-clear-instructions
+
+
+Custom GPTs
+   Girmoire
+   Dall E
+
+
+
+1. ctrl / to comment multiple lines
+   /t to add tabs spaces
+   /n start new lines
+   rstrip() is used to ignore right spaces
+   lstrip() is used to ignore left spaces
+
+
+
+Q1 2nd Class
+
+1. Py extension does not work if we don't have installed python.
+2. Book Python Crash Course 3rd edition
+3. We can open any terminal using powershell
+     Select Default profile from drop down.
+
+4. Get these extension
+
+    Ext 1 Material Icon Theme
+    Ext 2 prettier code formatter
+    Ext Git Lens - Git supper
+    Ext code spell checker           (Check Spelling in code)
+    Ext python                       (Helps run python code)
+    Ext Python Debugger
+    Ext Code Runner
+    Ext Jupyter                       ipynb (Interactive Python Notebook)
+    Ext MyPy                          (Check type error in Python)
+
+
+5. Settings > type formatter select formatter i.e prettier 
+           we can use format save to format save.   
+
+
+
+Q1 3rd Class 04-08-2024 
+   Change Directory cd
+
+   1. we use prefix and tab to view full name.
+   2. cd .. to go back
+
+   Python
+   1. Errors are three types
+      1. Logical error
+      2. syntax error
+      3. Compile time error
+      4. Runtime error
+
+   2. Python 3.12.4 etc are translator (Interpreter)
+      #Interpreter read code line by line compiler read code as ful.
+
+   3. Variables are container. They should follow naming convention.
+      variables are labels i.e name
+      1. Data type (Permitive : single value, Non Permitive :multiple values)
+         Permitive:
+         string  : str
+         integer : int
+         Float   : Float
+         bool:    True ,False
+         Non Permetive:
+         Lists : lists 
+         tupples Tupples are imutable
+
+      2. Variable has two phases (Declare and Initialization)
+         
+
+
+
+
+

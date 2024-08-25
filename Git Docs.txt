@@ -1,0 +1,128 @@
+# Push to GIT
+cd /e/Gen_AI/python_learning/assignments/Q1W4
+git init
+git remote add origin https://github.com/fadi1717/Assignments.git
+git add .
+git commit -m "Added Q1W4 Python Excercise on list assignment"
+git push -u origin master
+git status
+git add Week_1/new_file.ipynb
+git add Week_1/
+git commit -m "Added new file to Week 1 assignments"
+git push
+git pull
+
+
+
+#Basic Commands
+git help config 
+git config --list
+git config --global user.name "fadi1717"
+git config --global user.email "f.ilyas1717@gmail.com"
+git config --list --show-origin
+git command -h
+git config -h
+git init 
+git clone [URL]
+git add [filename]
+git add --all
+git rm --cached filename
+git diff
+git restore "filename"
+git mv "filename" "filename1"
+git commit -m "First commit not changes"
+git log
+.git log --oneline
+git log --graph --oneline
+git log --pretty=format:"%h - %an, %ar : %s"
+
+
+#Branch
+git branch handler-base-kpi
+git checkout -b handler-base-kpi
+git checkout handler-base-kpi
+git push origin handler-base-kpi
+git merge handler-base-kpi
+
+
+
+
+
+
+
+
+
+
+# call default git branch
+git config --global init.default branch
+
+
+Press arrow up down enter Q to quit
+
+#Restore previous version
+git reset hashtag
+git reset --hard 0cd2304
+git reset --soft hashtag
+git restore filename
+
+
+#Clone
+git clone <repository-url> /path/to/backup/folder
+git add .
+git commit -m "Backup commit"
+
+#To Push Branches
+#git push origin <branch-name>
+
+
+
+#rebasing
+git rebase -i --root
+
+:x to exit
+
+#Merge to main
+
+
+#Differences between working directory and last commit:
+git diff path/to/your/file.txt
+#Differences between staging area and last commit:
+git diff --cached path/to/your/file.txt
+#Differences between two specific commits:
+git diff commit1 commit2 -- path/to/your/file.txt
+git diff cb435a6 975d2e5 --pages/page1.py
+
+#Over ride user
+git config user.name "fadi1717"
+git config user.email f.ilyas1717@gmail.com
+
+
+#Change editor
+$ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe'
+-multiInst -notabbar -nosession -noPlugin"
+
+#Check your settings
+$ git config --list
+
+
+# Get only user
+$ git config user.name
+
+#Check auto update
+$ git config --show-origin rerere.autoUpdate
+
+
+#Remove file
+rm -f .git/index.lock
+
+
+#Delete Branch Force
+git branch -D handler-base-kpi
+
+#Delete remote branch
+git push origin --delete handler-base-kpi
+
+
+
+
+

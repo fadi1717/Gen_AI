@@ -1,0 +1,18 @@
+
+#go back 
+cd ..
+
+#clear cmd 
+cls
+
+#get folder name
+folder prefix Press Tab
+
+#get file name
+dir abc*.* Press Tab
+
+#Get all children
+Get-ChildItem
+
+#Rename a file
+Rename-Item -Path "Dockerfile.txt" -NewName "Dockerfile"

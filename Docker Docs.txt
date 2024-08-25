@@ -1,0 +1,140 @@
+Installation
+
+Download docker desktop
+Install WSL
+wsl --install
+Check virtualization is on in 'Windows Features'
+Validate virtualization from task manager>Performance>CPU
+
+further visit Docker docs
+
+
+
+Windows Subsystem for Linux WSL
+Turn on Subsystem for Linux in windows features
+
+
+#Sample Docker File/Image
+
+# Use an official Python runtime as a parent image
+FROM python:3.10-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the contents of the tables directory into the container
+COPY . /app
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements/requirements.txt
+
+# Make port 8050 available to the world outside this container
+EXPOSE 8050
+
+# Run app.py when the container launches
+CMD ["python", "app.py"]
+
+Build
+#docker build -t file-processing-dash-app .
+
+#Run
+docker run file-processing-dash-app
+docker run -p 8050:8050 -v ${PWD}/uploads:/app/uploads -v ${PWD}/processed:/app/processed file-processing-dash-app
+
+#Specific File
+docker run -p 8050:8050 -v ${PWD}:/app file-processing-dash-app
+
+
+
+
+#Rebuild
+docker build -t file-processing-dash-app .
+
+#Remove Cache
+docker build --no-cache -t file-processing-dash-app .
+
+#List images
+docker images
+#Show running container
+docker ps
+#list all
+docker ps -a
+docker logs e54 (e54 is prefix of id 3)
+
+
+
+
+
+#Linux
+
+#Commands
+
+ls -l --help
+
+
+docker pull ubuntu
+docker pull ubuntu:20.04
+docker run -ti --rm ubuntu /bin/bash
+ls
+ls -l
+touch app.py
+echo Pakistan Zindabad > app.py
+echo Pakistan Zindabad >> app.py
+cat app.py
+ps                                (like task manager)
+ps -l
+ctrl-PQ  ctr c or exit are alternative                        (Let containair run while exiting)
+
+
+
+
+
+
+#Comments
+#process ps -elf
+
+Dirctory has blue color
+files has green color
+running file is highlighted green with bg
+
+#Ubuntu has GUI named GNOME
+#-ti     TTY(Terminal Interaction)
+# --rm   remove everyting when close
+#/ is root
+#user is root
+#root is admin
+we can run files in root
+#sub User are in home
+home use ~ sign
+root uses / sign
+#present working directory
+#Make directory
+mkdir code
+#Make file
+touch app.py
+
+#Print message terminal
+echo Pakistan Zindabad
+
+> redirect sign (replace content)
+>> append sign (append content)
+2> It is used to control error
+ 
+echo Pakistan Zindabad > app.py
+
+#Read file
+cat app.py
+
+#ls -l for detail file
+
+
+
+
+
+
+
+
+
+
+
+

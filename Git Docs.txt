@@ -45,7 +45,13 @@ git push origin handler-base-kpi
 git merge handler-base-kpi
 
 
+#Check files for tracking
+git ls-files
 
+
+#Untrack Folder and file
+git rm -r --cached Census_2022/
+git rm --cached "Outputs/Cig_Sales_Prediction.csv"
 
 
 

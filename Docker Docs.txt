@@ -57,24 +57,22 @@ docker build --no-cache -t file-processing-dash-app .
 docker images
 #Show running container
 docker ps
-#list all
+#list allg
 docker ps -a
 docker logs e54 (e54 is prefix of id 3)
+
+#Commands
+docker pull ubuntu
+docker pull ubuntu:20.04
+docker run -ti --rm ubuntu /bin/bash
 
 
 
 
 
 #Linux
-
-#Commands
-
 ls -l --help
 
-
-docker pull ubuntu
-docker pull ubuntu:20.04
-docker run -ti --rm ubuntu /bin/bash
 ls
 ls -l
 touch app.py
@@ -128,9 +126,39 @@ cat app.py
 #ls -l for detail file
 
 
+#List all running processes:
 
+ps -elf
 
+#Exit the Container without terminating it:
 
+Press Ctrl-PQ to exit the container without terminating it.
+
+#List All Running Containers:
+
+docker ps
+
+#Attaching to running Container:
+
+docker exec -it container_name bash
+
+#Stop the Container:
+
+docker stop container_name
+
+#List the Containers, even those that are in stopped state:
+
+docker ps -a
+
+#Kill the Container:
+
+docker rm container_name
+
+#Install python in docker
+apt-get update
+apt-get install python3
+python3 --version
+apt-get install python3-pip
 
 
 

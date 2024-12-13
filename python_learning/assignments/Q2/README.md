@@ -9,7 +9,7 @@
 
 ### 2. **Model**
 
-- The version of AI you want to use (e.g., `gpt-4`, `gpt-3.5-turbo`).
+- The version of AI we want to use (e.g., `gpt-4`, `gpt-3.5-turbo`...).
 - Some models are faster or more advanced than others.
 
 ### 3. **Max Completion Tokens**
@@ -20,12 +20,12 @@
 ### 4. **n**
 
 - Decides how many responses the AI should give for the same question.
-- For example, if `n=2`, you’ll get two different answers.
+- For example, if `n=2`, we’ll get two different answers.
 
 ### 5. **Stream**
 
 - If `true`, the AI sends its response piece by piece as it writes.
-- Useful for long answers because you don’t have to wait for the whole thing.
+- Useful for long answers because we don’t have to wait for the whole thing.
 
 ### 6. **Temperature**
 
